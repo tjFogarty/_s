@@ -1,0 +1,42 @@
+// *************************************
+//
+//   _settings.scss
+//   -> Declare fonts and variables
+//
+// *************************************
+
+$site-font: 'Lato', sans-serif;
+$heading-font: 'Lato', serif;
+
+$html-font-size: 62.5%;
+$body-font-size: 14;
+
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+/**
+ * Define colours
+ * e.g. $red: #ff0000;
+ */
+$light-blue: #0097fa;
+$dark-blue: #015996;
+$orange: #ff9000;
+$dark-gray: #333333;
+$gray: #666666;
+$lighter-blue: #51baff;
+
+/**
+ * Assign colours
+ * e.g. $primary-colour: $red;
+ */
+$primary-colour: $light-blue;
+$primary-colour-light: $lighter-blue;
+$secondary-colour: $dark-blue;
+$tertiary-colour: $orange;
+$text-colour: $dark-gray;
+
+/**
+ * Breakpoints
+ */
+$bp-small: 480px;
+$bp-medium: 600px;
+$bp-large: 900px;

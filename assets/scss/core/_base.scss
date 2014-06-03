@@ -1,0 +1,102 @@
+// *************************************
+//
+//   _base.scss
+//   -> Base-level styles
+//
+// *************************************
+
+/**
+ * Magic
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+ *, *:before, *:after {
+  box-sizing: border-box;
+ }
+
+body {
+  position: relative;
+}
+
+html {
+  font-size: $html-font-size;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+time {
+  color: $primary-colour;
+  font-style: italic;
+  margin-bottom: 5px;
+  @extend %display--block;
+}
+
+
+body {
+  font-family: $site-font;
+  line-height: 1.45;
+  color: $text-colour;
+  @include font-size($body-font-size);
+}
+
+a {
+  color: $primary-colour;
+  transition: color ease 0.2s;
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    color: $secondary-colour;
+  }
+}
+
+p, ul, ol {
+  margin: 0 0 25px 0;
+  margin: 0 0 2.5rem 0;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+  background: #fff;
+  border-radius: 4px;
+  font-style: italic;
+  padding: 12px 7px;
+  border: 1px solid #ccc;
+  color: $gray;
+  @include font-size(15);
+}
+
+::-webkit-input-placeholder {
+  color: $gray;
+}
+
+::-moz-input-placeholder {
+  color: $gray;
+}
+
+::input-placeholder {
+  color: $gray;
+}
+
+::-webkit-selection {
+  background: $primary-colour;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $primary-colour;
+  color: #fff;
+}
+
+::selection {
+  background: $primary-colour;
+  color: #fff;
+}

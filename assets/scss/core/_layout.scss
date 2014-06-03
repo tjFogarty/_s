@@ -1,0 +1,17 @@
+// *************************************
+//
+//   _layout.scss
+//   -> Default system being used is Susy - http://susy.oddbird.net/
+//
+// *************************************
+
+%grid-properties {
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  @extend %cf;
+  @extend %grid-properties;
+}

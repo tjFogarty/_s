@@ -1,0 +1,13 @@
+// *************************************
+//
+//   application.scss
+//   -> This is the loader file for all the styles.
+//    If you want to make changes, do so in the core or modules folder
+//    - don't write any styles in here.
+//
+//    See: http://mvcss.github.io/
+//
+// *************************************
+
+@import "core/core",
+        "modules/modules";

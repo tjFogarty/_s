@@ -1,0 +1,33 @@
+// *************************************
+//
+//   _content.scss
+//   -> Application of typography, fonts, colours...
+//   Used for setting up abstractions
+//
+// *************************************
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  color: $primary-colour;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  @extend %flush--top;
+}
+
+h1, .h1 {
+  @include font-size(46);
+}
+
+h2, .h2 {
+  @include font-size(25);
+}
+
+h3, .h3 {
+  @include font-size(22);
+}
+
+h4, .h4 {
+  @include font-size(16);
+}
